@@ -1,0 +1,22 @@
+.champ {
+	color: blue;
+	font-family: cambria;
+	text-align: center;
+	border: double black;
+}
+
+.profile{
+	color:blue;
+	font-family: cambria;
+	text-align: center;
+	border: double black;
+}
+
+.row{
+	display: flex;
+}
+
+.column{
+	font-size: larger;
+	flex: 50%;
+}

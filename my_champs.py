@@ -2,8 +2,8 @@ import requests
 import json
 
 
-def save_my_champs():
-	res = requests.get("https://na1.api.riotgames.com/lol/match/v3/matchlists/by-account/49654475?api_key=RGAPI-332325b0-8aba-4da1-be39-d74ecc98a20c")
+def save_my_matchlist():
+	res = requests.get("https://na1.api.riotgames.com/lol/match/v3/matchlists/by-account/32766?api_key=RGAPI-bbf1115c-5e1a-4b18-8c3c-a9326ee5ce37")
 	my_champs = res.json()
 	with open("my_champs.json", "w") as f:
 		f.write(json.dumps(my_champs, sort_keys=True))
@@ -13,8 +13,14 @@ def get_my_champs():
 	    my_champs = json.load(f)
 	return my_champs
 
+def save_riot_champs():
+	res = requests.get("http://ddragon.leagueoflegends.com/cdn/8.13.1/data/en_US/champion.json")
+	my_champs = res.json()
+	with open("champion.json", "w") as f:
+		f.write(json.dumps(my_champs, sort_keys=True))
+
 def get_riot_champs():
-	with open('champions.json') as f:
+	with open('champion.json') as f:
 	    riot_champs = json.load(f)
 	return riot_champs
 
@@ -70,6 +76,7 @@ def match_name_to_play_count():
 
 
 def main():
+	save_my_matchlist()
 	match_name_to_play_count()
 	
 
