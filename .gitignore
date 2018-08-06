@@ -23,3 +23,6 @@ yarn-error.log*
 my_champs.json
 champion.json
 /src/data/*
+/profileViewerServer/node_modules/*
+/profileViewerServer/client/node_modules/*
+/profileViewerServer/client/profileApi/*

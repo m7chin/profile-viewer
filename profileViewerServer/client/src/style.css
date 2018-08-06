@@ -1,0 +1,44 @@
+.champ {
+	color: blue;
+	font-family: cambria;
+	text-align: left;
+	border: double black;
+	text-decoration: underline;
+
+}
+
+.profile{
+	color:blue;
+	font-family: cambria;
+	text-align: center;
+	border: double black;
+	text-decoration: underline;
+}
+
+.champPic{
+	text-indent: 10px;
+}
+
+.row{
+	display: flex;
+}
+
+.column{
+	font-size: larger;
+	flex: 50%;
+}
+
+.playerImage{
+	width: 150px;
+}
+.App-title{
+	margin-top: 0px;
+}
+
+.mastery{
+	color: blue;
+	font-family: cambria;
+	text-align: left;
+	border: double black;
+	text-decoration: underline;
+}
