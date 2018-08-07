@@ -29,17 +29,6 @@ app.get('/test', (req, res) => {
 });
 
 
-app.get('/musician/:name', function(req, res) {
-
-   // Get /musician/Matt
-   console.log(req.params.name)
-   // => Matt
-
-   let testObj = {"id": 1,"name": req.params.name,
-     "band":"BBQ Brawlers"};
-
-   res.send(testObj);
-});
 
 app.get('/', (req, res) => {
 	res.send("Welcome to Best Site")
